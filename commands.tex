@@ -1,0 +1,19 @@
+\newcommand{\centeredimage}[2][0.9\textwidth]{
+    \raisebox{-.5\height}{\includegraphics[width=#1]{#2}}
+}
+
+\newenvironment{important}[1][]{
+   \begin{mdframed}[
+      backgroundcolor={red!15}, hidealllines=true,
+      skipabove=0.7\baselineskip, skipbelow=0.7\baselineskip,
+      splitbottomskip=2pt, splittopskip=4pt, #1]
+   \makebox[0pt]{
+      \smash{
+         \fontsize{29.86pt}{29.86pt}\selectfont
+         \hspace*{-19pt}
+         \raisebox{-2pt}{
+            {\color{red!70!black}\sffamily\bfseries !}
+         }
+      }
+   }
+}{\end{mdframed}}

@@ -1,0 +1,61 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,french]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[colorlinks=true,linkcolor=black]{hyperref}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{svg}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{ulem}
+\usepackage{footnote}
+\usepackage{mdframed}
+\usepackage{listings}
+
+\geometry{
+    left=3cm,
+    right=2cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+\input{commands.tex}
+
+\input{pages/header.tex}
+
+\justifying{}
+
+\tableofcontents
+
+\include{pages/chapitre1.tex}
+
+\end{document}
